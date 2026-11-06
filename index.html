@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meridian Post</title>
+    <meta
+      name="description"
+      content="Meridian Post is a global news website delivering world, business, climate, and culture coverage."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <div class="eyebrow">Global News • Live Coverage</div>
+        <div class="top-links">
+          <span>World</span>
+          <span>Politics</span>
+          <span>Economy</span>
+          <span>Climate</span>
+          <span>Culture</span>
+        </div>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand" aria-label="Meridian Post home">
+          <div class="brand-mark">MP</div>
+          <div class="brand-text">Meridian Post</div>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#">Home</a>
+          <a href="#">World</a>
+          <a href="#">Business</a>
+          <a href="#">Science</a>
+          <a href="#">Culture</a>
+          <a href="#">Sport</a>
+          <a href="#">Opinion</a>
+        </nav>
+
+        <div class="header-actions">
+          <input type="search" class="search-input" placeholder="Search" aria-label="Search stories" />
+          <button class="subscribe-btn">Subscribe</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="container hero-grid">
+          <article class="featured-story">
+            <div class="story-content">
+              <span class="tag">Top Story</span>
+              <h1>Global cities race to build greener, smarter futures</h1>
+              <p>
+                From electric transit expansion to resilient infrastructure, leaders worldwide are redesigning urban life to be cleaner, healthier, and more connected.
+              </p>
+              <div class="story-meta">
+                <span>By Editorial Desk</span>
+                <span>6 min read</span>
+                <span>Updated 2 hours ago</span>
+              </div>
+            </div>
+          </article>
+
+          <div class="side-stories">
+            <article class="mini-story">
+              <img
+                src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?auto=format&fit=crop&w=900&q=80"
+                alt="Climate resilience infrastructure"
+              />
+              <div class="mini-story-body">
+                <span class="mini-tag">Climate</span>
+                <h3>Coastal regions invest in resilient systems as sea levels rise.</h3>
+              </div>
+            </article>
+
+            <article class="mini-story">
+              <img
+                src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80"
+                alt="AI technology and business"
+              />
+              <div class="mini-story-body">
+                <span class="mini-tag">Technology</span>
+                <h3>AI researchers push new ethical standards as adoption accelerates.</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="latest-section container">
+        <div class="section-header">
+          <h2>Latest stories</h2>
+          <a href="#">View all</a>
+        </div>
+
+        <div id="news-grid" class="news-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="editorial-section">
+        <div class="container editorial-grid">
+          <div class="editorial-copy">
+            <span class="tag tag-light">From the editor</span>
+            <h2>Independent reporting for a connected world.</h2>
+            <p>
+              Meridian Post brings together sharp reporting, grounded analysis, and international perspective. We follow the stories shaping cities, communities, and futures across the globe.
+            </p>
+
+            <div class="stats-grid">
+              <div class="stat-box">
+                <strong>140+</strong>
+                <span>Countries</span>
+              </div>
+              <div class="stat-box">
+                <strong>24/7</strong>
+                <span>Coverage</span>
+              </div>
+              <div class="stat-box">
+                <strong>3.2M</strong>
+                <span>Readers</span>
+              </div>
+            </div>
+          </div>
+
+          <aside class="editorial-panel">
+            <h3>Why readers trust us</h3>
+            <ul>
+              <li>On-the-ground reporting from major international regions.</li>
+              <li>Clear context and expert analysis beyond headlines.</li>
+              <li>Fast updates that remain accountable and evidence-driven.</li>
+              <li>Coverage spanning politics, climate, culture, technology, and business.</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">Meridian Post</div>
+        <div class="footer-links">
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">Advertise</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
