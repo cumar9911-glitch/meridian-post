@@ -126,3 +126,14 @@ main{padding:20px 16px 40px}
 /* Ezoic ad spots: no reserved height (Ezoic advises against it); just breathing room when an ad is present */
 .ez-ad{clear:both;text-align:center;max-width:100%;overflow:hidden}
 .ez-ad:has(> div,> iframe,> span){margin:18px 0}
+/* ---- Original articles ---- */
+.nav-inner a.nav-articles{font-weight:800}
+.art-strip{border-top:3px solid var(--red);margin-top:18px}
+.art-strip .brief-grid{grid-template-columns:repeat(3,1fr)}
+.card.art{border-top-color:#1a4d8f}
+.article .standfirst{font:20px/1.5 var(--serif);color:#3c4043;margin:6px 0 12px;max-width:720px}
+.article .byline a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+.attrib{font-size:12.5px;color:var(--muted);margin:6px 0 10px}
+.meta a.src{color:#3c4043;text-decoration:none}.meta a.src:hover{text-decoration:underline}
+.side-articles li .meta{display:block}
+@media(max-width:900px){.art-strip .brief-grid{grid-template-columns:1fr}}
