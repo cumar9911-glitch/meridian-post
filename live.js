@@ -14,7 +14,7 @@
   try { var el = document.querySelector('.today'); if (el) el.textContent = new Date().toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Europe/London' }); } catch (e) {}
   var list = document.querySelector('.list[data-live-cat]'); var latest = document.querySelector('ol.latest');
   if (!list && !latest) return;
-  fetch("/api/live", { headers: { Accept: 'application/json' } }).then(function (r) { return r.ok ? r.json() : null; }).then(function (d) {
+  fetch('https://api-v2.appdeploy.ai/app/the-daily-globe-9tzr7w/api/live', { headers: { Accept: 'application/json' } }).then(function (r) { return r.ok ? r.json() : null; }).then(function (d) {
     if (!d || !d.items || !d.items.length) return;
     var items = d.items;
     if (latest) latest.innerHTML = items.slice(0, 10).map(function (it) { return '<li><a href="' + esc(it.l) + '" target="_blank" rel="noopener nofollow">' + esc(it.t) + '</a><span class="meta">' + esc(it.s) + ' · <time data-ts="' + it.d + '">' + ago(it.d) + '</time></span></li>'; }).join('');
